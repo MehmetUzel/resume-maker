@@ -4,13 +4,14 @@
     "surname": "Doe",
     "email": "john.doe@example.com",
     "phone": "1234567890",
+    "title": "Software Engineer",
     "linkedin": "https://www.linkedin.com/in/john-doe/",
     "github": "https://github.com/johndoe"
     },
     "experiences": [
     {
     "company": "Acme Corp",
-    "start": "2020-01-01",
+    "start": "2021-05-01",
     "end": "2020-12-31",
     "projects": [
     {
@@ -56,7 +57,56 @@
     "seniority": "Mid"
     }
     ]
-    }
+    },
+    {
+        "company": "New Corp",
+        "start": "2017-05-01",
+        "end": "2019-12-31",
+        "projects": [
+        {
+        "name": "Project A",
+        "start": "2020-01-01",
+        "end": "2020-06-30",
+        "skills": [
+        {
+        "name": "Python",
+        "seniority": "Senior"
+        },
+        {
+        "name": "Django",
+        "seniority": "Mid"
+        }
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+        "name": "Project B",
+        "start": "2020-07-01",
+        "end": "2020-12-31",
+        "skills": [
+        {
+        "name": "JavaScript",
+        "seniority": "Mid"
+        },
+        {
+        "name": "React",
+        "seniority": "Mid"
+        }
+        ],
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        }
+        ],
+        "skills": [
+        {
+        "name": "Agile",
+        "seniority": "Senior"
+        },
+        {
+        "name": "Scrum",
+        "seniority": "Mid"
+        }
+        ]
+        }
     ],
     "educations": [
     {

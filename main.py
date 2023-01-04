@@ -8,3 +8,7 @@ with open('data.json', 'r') as f:
 
 # Create an object from the data
 obj = Resume(**data)
+
+print(obj.total_years_of_experience())
+
+obj.new_generate_pdf('afinres.pdf')
