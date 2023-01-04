@@ -1,0 +1,123 @@
+{
+    "person": {
+    "name": "John",
+    "surname": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "1234567890",
+    "linkedin": "https://www.linkedin.com/in/john-doe/",
+    "github": "https://github.com/johndoe"
+    },
+    "experiences": [
+    {
+    "company": "Acme Corp",
+    "start": "2020-01-01",
+    "end": "2020-12-31",
+    "projects": [
+    {
+    "name": "Project A",
+    "start": "2020-01-01",
+    "end": "2020-06-30",
+    "skills": [
+    {
+    "name": "Python",
+    "seniority": "Senior"
+    },
+    {
+    "name": "Django",
+    "seniority": "Mid"
+    }
+    ],
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+    "name": "Project B",
+    "start": "2020-07-01",
+    "end": "2020-12-31",
+    "skills": [
+    {
+    "name": "JavaScript",
+    "seniority": "Mid"
+    },
+    {
+    "name": "React",
+    "seniority": "Mid"
+    }
+    ],
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+    ],
+    "skills": [
+    {
+    "name": "Agile",
+    "seniority": "Senior"
+    },
+    {
+    "name": "Scrum",
+    "seniority": "Mid"
+    }
+    ]
+    }
+    ],
+    "educations": [
+    {
+    "name": "Universtiy of Example",
+    "start": "2016-09-01",
+    "end": "2020-06-30",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+    ],
+    "skills": [
+    {
+    "name": "Python",
+    "seniority": "Senior"
+    },
+    {
+    "name": "Django",
+    "seniority": "Mid"
+    },
+    {
+    "name": "JavaScript",
+    "seniority": "Mid"
+    },
+    {
+    "name": "React",
+    "seniority": "Mid"
+    },
+    {
+    "name": "Agile",
+    "seniority": "Senior"
+    },
+    {
+    "name": "Scrum",
+    "seniority": "Mid"
+    }
+    ],
+    "languages": [
+    {
+    "name": "English",
+    "level": "Fluent"
+    },
+    {
+    "name": "Spanish",
+    "level": "Intermediate"
+    }
+    ],
+    "projects": [
+    {
+    "name": "Project C",
+    "start": "2021-01-01",
+    "end": "2021-06-30",
+    "skills": [
+    {
+    "name": "Python",
+    "seniority": "Senior"
+    },
+    {
+    "name": "Flask",
+    "seniority": "Mid"
+    }
+    ],
+    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+    ]
+    }
