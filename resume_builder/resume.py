@@ -10,34 +10,21 @@ from reportlab.lib.units import inch
 
 def draw_long_string(canvas, x, y, text, width):
     """Draw a long string on the given canvas, breaking it into multiple lines as needed to fit within the given width."""
-    # Split the string into words
     words = text.split()
-    # Keep track of the current position on the canvas
     current_x = x
     current_y = y
-    # Set the font and font size
     canvas.setFont('Helvetica', 12)
-    # Iterate over the words in the string
     for word in words:
-        # Check if the current word will fit within the current line
         if canvas.stringWidth(word) > width:
-            # The word is too long to fit within the current line, so we need to break it into smaller chunks
-            # Find the maximum number of characters that can fit within the current line
             max_chars = width // canvas.stringWidth('A')
-            # Split the word into smaller chunks that will fit within the current line
             chunks = [word[i:i+max_chars] for i in range(0, len(word), max_chars)]
-            # Draw the chunks on separate lines
             for chunk in chunks:
                 canvas.drawString(current_x, current_y, chunk)
                 current_y -= 0.25*inch
         else:
-            # The word fits within the current line, so we can draw it
             canvas.drawString(current_x, current_y, word)
-            # Increment the x position by the width of the word
             current_x += canvas.stringWidth(word)
-            # Check if the next word will fit within the current line
-            if current_x + canvas.stringWidth(words[i+1]) > x + width:
-                # The next word won't fit within the current line, so we need to move to the next line
+            if current_x + canvas.stringWidth(word) > x + width:
                 current_x = x
                 current_y -= 0.25*inch
     return current_y
@@ -60,6 +47,7 @@ class Person(BaseModel):
     email: str
     phone: str
     title: str
+    about: str
     linkedin: HttpUrl
     github: HttpUrl
 
@@ -102,6 +90,7 @@ class Experience(BaseModel):
     company: str
     start: str
     end: str
+    description: str
     projects: List[Project]
     skills: List[Skill]
 
@@ -181,49 +170,65 @@ class Resume(BaseModel):
     def new_generate_pdf(self, filename):
             canvas = Canvas(filename, pagesize=letter)
             y = 10*inch  # start drawing at this y coordinate
+            profile_off = 0.5*inch
+            experience_off = 3.75*inch
+
+            # ! Dont remove credits below
+            canvas.drawString(0.75*inch, 10.5*inch, "Built with resume builder python package by Mehmet UZEL")
+            y -= 0.25*inch
 
             # Draw the name and contact information
-            canvas.drawString(1*inch, y, self.person.get_full_name())
+            canvas.drawString(profile_off, y, self.person.get_full_name())
             y -= 0.25*inch
-            canvas.drawString(1*inch, y, self.person.title)
+            canvas.drawString(profile_off, y, self.person.title)
             y -= 0.25*inch
-            canvas.drawString(1*inch, y, self.person.email)
+            canvas.drawString(profile_off, y, self.person.email)
             y -= 0.25*inch
-            canvas.drawString(1*inch, y, self.person.phone)
+            canvas.drawString(profile_off, y, self.person.phone)
             y -= 0.25*inch
-            canvas.drawString(1*inch, y, self.person.linkedin)
+            canvas.drawString(profile_off, y, self.person.linkedin)
             y -= 0.25*inch
-            canvas.drawString(1*inch, y, self.person.github)
-            y -= 0.5*inch
-
-            # Draw the experiences
-            canvas.drawString(1*inch, y, 'Experience')
-            y -= 0.25*inch
-            canvas.drawString(1*inch, y, f'Total Years of Experience : {self.total_years_of_experience()}')
-            y -= 0.25*inch
-            for experience in self.experiences:
-                canvas.drawString(1*inch, y, f'{experience.company} ({experience.start} - {experience.end})')
-                y -= 0.25*inch
-                for project in experience.projects:
-                    canvas.drawString(1.5*inch, y, f'{project.name} ({project.start} - {project.end})')
-                    y -= 0.25*inch
-                    y = draw_long_string(canvas, 1.5*inch, y, project.description, 4*inch)
-                    y -= 0.25*inch
-                y -= 0.25*inch
+            canvas.drawString(profile_off, y, self.person.github)
             y -= 0.5*inch
 
             # Draw the skills
-            canvas.drawString(1*inch, y, 'Skills')
+            canvas.drawString(profile_off, y, 'Skills')
             y -= 0.25*inch
             for skill in self.skills:
-                canvas.drawString(1*inch, y, f'{skill.name} ({skill.seniority})')
+                canvas.drawString(profile_off, y, f'{skill.name} ({skill.seniority})')
                 y -= 0.25*inch
-
+            y -= 0.25*inch
             # Draw the languages
-            canvas.drawString(1*inch, y, 'Languages')
+            canvas.drawString(profile_off, y, 'Languages')
             y -= 0.25*inch
             for language in self.languages:
-                canvas.drawString(1*inch, y, f'{language.name} ({language.level})')
+                canvas.drawString(profile_off, y, f'{language.name} ({language.level})')
                 y -= 0.25*inch
+            y -= 0.25*inch
+            # Draw the languages
+            canvas.drawString(profile_off, y, 'About')
+            y -= 0.25*inch
+            y = draw_long_string(canvas, profile_off, y, self.person.about, 2.75*inch)
+
+            y = 9.75*inch
+            # Draw the experiences
+            canvas.drawString(experience_off, y, 'Experience')
+            y -= 0.25*inch
+            canvas.drawString(experience_off, y, f'Total Years of Experience : {self.total_years_of_experience()}')
+            y -= 0.25*inch
+            for experience in self.experiences:
+                canvas.drawString(experience_off, y, f'{experience.company} ({experience.start} - {experience.end})')
+                y -= 0.25*inch
+                y = draw_long_string(canvas, experience_off+0.5*inch, y, experience.description, 4*inch)
+                y -= 0.25*inch
+                for project in experience.projects:
+                    canvas.drawString(experience_off+0.5*inch, y, f'{project.name} ({project.start} - {project.end})')
+                    y -= 0.25*inch
+                    y = draw_long_string(canvas, experience_off+0.5*inch, y, project.description, 4*inch)
+                    y -= 0.25*inch
+                y -= 0.25*inch
+            y -= 0.25*inch
+
+            
 
             canvas.save()

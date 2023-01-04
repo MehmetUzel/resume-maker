@@ -3,7 +3,7 @@ from resume_builder import *
 
 class TestPerson(unittest.TestCase):
     def test_get_full_name(self):
-        person = Person(name='John', surname='Doe', email='john@example.com', phone='123-456-7890', title='Software Engineer', linkedin='http://linkedin.com/in/johndoe', github='http://github.com/johndoe')
+        person = Person(name='John', surname='Doe', email='john@example.com', phone='123-456-7890', title='Software Engineer', about='Motivated Engineer, who likes camping', linkedin='http://linkedin.com/in/johndoe', github='http://github.com/johndoe')
         self.assertEqual(person.get_full_name(), 'John Doe')
 
 class TestEducation(unittest.TestCase):
@@ -36,12 +36,12 @@ class TestExperience(unittest.TestCase):
         skill2 = Skill(name='Java', seniority='Mid')
         project1 = Project(name='Project 1', start='2020-01-01', end='2020-06-30', skills=[skill1, skill2], description='This is a description of my project.')
         project2 = Project(name='Project 2', start='2020-07-01', end='2020-12-31', skills=[skill1], description='This is a description of my project.')
-        experience = Experience(company='Acme Inc.', start='2020-01-01', end='2020-12-31', projects=[project1, project2], skills=[skill1, skill2])
+        experience = Experience(company='Acme Inc.', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2], skills=[skill1, skill2])
         self.assertEqual(experience.company, 'Acme Inc.')
 
 class TestResume(unittest.TestCase):
     def test_total_years_of_experience(self):
-        person = Person(name='John', surname='Doe', email='john@example.com', phone='123-456-7890', title='Software Engineer', linkedin='http://linkedin.com/in/johndoe', github='http://github.com/johndoe')
+        person = Person(name='John', surname='Doe', email='john@example.com', phone='123-456-7890', title='Software Engineer', about='Motivated Engineer, who likes camping', linkedin='http://linkedin.com/in/johndoe', github='http://github.com/johndoe')
         skill1 = Skill(name='Python', seniority='Senior')
         skill2 = Skill(name='Java', seniority='Mid')
         language1 = Language(name='English', level='Fluent')
@@ -50,8 +50,8 @@ class TestResume(unittest.TestCase):
         project2 = Project(name='Project 2', start='2020-07-01', end='2020-12-31', skills=[skill1], description='This is a description of my project.')
         education1 = Education(name='Bachelor of Science', start='2016-09-01', end='2020-05-01', description='This is a description of my education.')
         education2 = Education(name='Master of Science', start='2020-09-01', end='2022-05-01', description='This is a description of my education.')
-        experience1 = Experience(company='Acme Inc.', start='2020-01-01', end='2020-12-31', projects=[project1, project2], skills=[skill1, skill2])
-        experience2 = Experience(company='XYZ Corp.', start='2021-01-01', end='2021-12-31', projects=[project1], skills=[skill2])
+        experience1 = Experience(company='Acme Inc.', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2], skills=[skill1, skill2])
+        experience2 = Experience(company='XYZ Corp.', start='2021-01-01', end='2021-12-31', description='This is a description of my experience.', projects=[project1], skills=[skill2])
         resume = Resume(person=person, experiences=[experience1, experience2], educations=[education1, education2], skills=[skill1, skill2], languages=[language1, language2], projects=[project1, project2])
         self.assertEqual(resume.total_years_of_experience(), 2.0)
 
