@@ -1,0 +1,142 @@
+{
+    "person": {
+        "name": "Mehmet",
+        "surname": "Uzel",
+        "email": "98mehmetuzel@gmail.com",
+        "phone": "+905317932594",
+        "title": "Software Engineer",
+        "about": "I am a software engineer with experience in various programming languages and technologies. In my professional experience, I have worked on projects such as emailing and news monitoring services, as well as a government bonds monitoring service. I have also worked on telecom data analysis and machine learning projects. In my personal projects, I have developed a mobile app, a random geolocation generator, and a photographer appointment website. I hold a bachelor's degree in computer engineering and am fluent in English and Turkish. In addition, I have experience with version control systems, project management tools, and CI/CD pipelines. I am proficient in Linux and web services and have experience with various frameworks and technologies.",
+        "linkedin": "https://www.linkedin.com/in/mehmet-uzel-925601136/",
+        "github": "https://github.com/MehmetUzel"
+    },
+    "experiences": [
+        {
+            "company": "Thomas Murray",
+            "title": "Software Engineer",
+            "start": "2022-05-01",
+            "end": "Active",
+            "description": "I developed an emailing service and a handshaking service to monitor the performance of individual services, ensuring that all cronjobs were executed successfully. It can monitore errors and provide support for non-idempotent services. This monitoring process, previously conducted by sysadmins for over 20 services, was automated through the use of my service, which also generated daily reports through email. Additionally, I created a news monitoring service that scrapes news from various sources, such as IRS, HKEX, and Clearstream, and emails them to analysts. I integrated a machine learning model to predict news topics and improve analysts' productivity. I also developed a government bonds monitoring service. I assisted and mentored junior developers in their integration to the company and in improving their technical skills, and participated in code reviews for junior-mid level developers. I also made deployments of web services and scripts to remote Linux VPS using Docker-Compose.",
+            "projects": [],
+            "skills": []
+        },
+        {
+            "company": "Huawei",
+            "title": "Software Engineer",
+            "start": "2021-09-01",
+            "end": "2022-04-30",
+            "description": "I was involved in telecom data analysis and machine learning projects, during which I deployed models using Python and Django. Unfortunately, I am unable to provide further information due to confidentiality agreements.",
+            "projects": [],
+            "skills": []
+        },
+        {
+            "company": "Felece",
+            "title": "Software Engineer",
+            "start": "2021-01-01",
+            "end": "2021-08-31",
+            "description": "Development of SAP Commerce (Hybris) using Java and Spring, following agile methodologies. This project involved the creation of an e-commerce platform for Penti, an international woman's clothing company with over 400 stores. During my time on this project, I was responsible for the development and implementation of various features, including favorites, store search and pick-up, customer consents, and others. These features aimed to improve the user experience and enhance the functionality of the platform. Overall, my work on this project allowed me to hone my skills in Java, Spring, and agile methodologies, and contributed to the success of the Penti e-commerce platform.",
+            "projects": [],
+            "skills": []
+        },
+        {
+            "company": "Private",
+            "title": "Tutor",
+            "start": "2018-12-01",
+            "end": "2020-12-31",
+            "description": "During my time at university, I had the opportunity to tutor programming to students aged 13-19. This experience allowed me to develop my teaching skills and strengthen my ability to explain complex concepts in an easily understandable manner. I believe that this experience is valuable in my professional career as it allows me to assist and guide my colleagues in improving their technical skills. The students I taught were located in Germany, Switzerland, the Netherlands, and Turkey, and the lessons were conducted entirely online in English. The topics covered included object-oriented programming, Java, Python, C#, JS, HTML, and CSS.",
+            "projects": [],
+            "skills": []
+        }
+    ],
+    "educations": [
+        {
+            "name": "Eskisehir Technical University",
+            "start": "2016-09",
+            "end": "2021-12",
+            "description": "Computer Engineering Bachelors. 3.02/4.0 GPA"
+        },
+        {
+            "name": "Data Science 102 Bootcamp",
+            "start": "2020-08",
+            "end": "2021-10",
+            "description": "Kodluyoruz social enterprise"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "C#"
+        },
+        {
+            "name": "Django"
+        },
+        {
+            "name": "FastAPI"
+        },
+        {
+            "name": "Dash"
+        },
+        {
+            "name": "Flutter"
+        },
+        {
+            "name": "GRPC"
+        },
+        {
+            "name": "REST"
+        },
+        {
+            "name": "Docker"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "Web Services"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "CI/CD Pipelines"
+        },
+        {
+            "name": "Postgresql"
+        },
+        {
+            "name": "MSSQL"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Fluent"
+        },
+        {
+            "name": "Turkish",
+            "level": "Fluent"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project C",
+            "start": "2021-01-01",
+            "end": "2021-06-30",
+            "skills": [
+                {
+                    "name": "Python",
+                    "seniority": "Senior"
+                },
+                {
+                    "name": "Flask",
+                    "seniority": "Mid"
+                }
+            ],
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        }
+    ]
+}

@@ -2,7 +2,7 @@ from resume_builder import *
 import json
 
 # Open the JSON file
-with open('data.json', 'r') as f:
+with open('mehmet.json', 'r') as f:
     # Load the data from the file
     data = json.load(f)
 
@@ -11,4 +11,4 @@ obj = Resume(**data)
 
 print(obj.total_years_of_experience())
 
-obj.new_generate_pdf('5skill.pdf')
+obj.new_generate_pdf('16skill.pdf')
