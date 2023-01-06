@@ -46,21 +46,14 @@ def draw_experience_title(c, x, y, text, date):
     c.setFont('Helvetica', FONTSIZE)
     c.drawString(x, y, date)
 
-
-def generate_pdf(resume, filename):
-    c = Canvas(filename)
-    y = 11.25*inch  # start drawing at this y coordinate
-    profile_off = 0.3*inch
-    experience_off = 3.75*inch
-    project_off = 0.3*inch
-
+def draw_credits(c, y):
     # ! Dont remove credits below
     c.setFont("Helvetica", 7)
     c.drawString(0.25*inch, y+0.1*inch, "Built with resume builder python package by Mehmet UZEL")
     c.setFont("Helvetica", FONTSIZE)
-    y -= 0.25*inch
+    return y - 0.25*inch
 
-    # Draw the name and contact information
+def draw_profile(c, profile_off, y, resume):
     c.setFont("Helvetica", 14)
     c.drawString(profile_off, y, resume.person.get_full_name())
     y -= 0.25*inch
@@ -78,24 +71,21 @@ def generate_pdf(resume, filename):
     c.drawString(profile_off, y, resume.person.github)
     y -= 0.5*inch
     c.setFont("Helvetica", FONTSIZE)
+    return y
 
-
-    # Draw the skills
+def draw_skills_section(c, profile_off, y, resume):
     draw_title_string(c, profile_off, y, 'Skills')
     y -= 0.25*inch
     y = draw_skills(c, profile_off, y, resume.skills, 2.75*inch)
-    y -= 0.25*inch
-    y -= 0.25*inch
+    return y - 0.5*inch
 
-
-    # Draw the About
+def draw_about_section(c, profile_off, y, resume):
     draw_title_string(c, profile_off, y, 'About')
     y -= 0.25*inch
     y = draw_long_string(c, profile_off, y, resume.person.about, 2.75*inch)
-    y -= 0.5*inch
+    return y - 0.5*inch
 
-
-    # Draw the education
+def draw_education_section(c, profile_off, y, resume):
     draw_title_string(c, profile_off, y, 'Education')
     y -= 0.25*inch
     for education in resume.educations:
@@ -105,19 +95,17 @@ def generate_pdf(resume, filename):
         c.drawString(profile_off + 0.1*inch, y, f'{education.description}')
         c.setFont("Helvetica", FONTSIZE)
         y -= 0.25*inch
-    y -= 0.25*inch
+    return y - 0.25*inch
 
-    # Draw the languages
+def draw_language_section(c, profile_off, y, resume):
     draw_title_string(c, profile_off, y, 'Languages')
     y -= 0.25*inch
     for language in resume.languages:
         c.drawString(profile_off, y, f'{language.name} ({language.level})')
         y -= 0.25*inch
-    y -= 0.25*inch
+    return y - 0.25*inch
 
-
-    y = 11.25*inch
-    # Draw the experiences
+def draw_experience_section(c, experience_off, y, resume):
     draw_title_string(c, experience_off, y, 'Experience')
     y -= 0.25*inch
     c.drawString(experience_off, y, f'Total Years of Experience : {resume.total_years_of_experience()} years')
@@ -132,12 +120,10 @@ def generate_pdf(resume, filename):
             y -= 0.25*inch
             y = draw_long_string(c, experience_off+0.25*inch, y, project.description, 4*inch)
             y -= 0.25*inch
+    return y - 0.25*inch
+
+def draw_projects_section(c, project_off, y, resume):
     y -= 0.25*inch
-
-    c.showPage()
-
-    y = 11*inch
-    # Draw the projects
     draw_title_string(c, project_off, y, 'Personal Projects')
     y -= 0.5*inch
     for project in resume.projects:
@@ -147,8 +133,47 @@ def generate_pdf(resume, filename):
         y -= 0.25*inch
         y = draw_long_string(c, project_off+0.25*inch, y, project.description, 7.5*inch)
         y -= 0.5*inch
-    y -= 0.25*inch
+    return y - 0.25*inch
 
+
+def generate_pdf(resume, filename):
+    c = Canvas(filename)
+    INITIAL_Y = 11.25*inch
+    y = INITIAL_Y  # start drawing at this y coordinate
+    profile_off = 0.3*inch
+    experience_off = 3.75*inch
+    project_off = 0.3*inch
+
+    # ! Dont remove credits below
+    y = draw_credits(c,y)
+
+    # Draw the name and contact information
+    y = draw_profile(c, profile_off, y, resume)
+
+
+    # Draw the skills
+    y = draw_skills_section(c, profile_off, y, resume)
+
+
+    # Draw the About
+    y = draw_about_section(c, profile_off, y, resume)
+
+
+    # Draw the education
+    y = draw_education_section(c, profile_off, y, resume)
+
+    # Draw the languages
+    y = draw_language_section(c, profile_off, y, resume)
     
+
+    y = INITIAL_Y
+    # Draw the experiences
+    y = draw_experience_section(c, experience_off, y, resume)
+
+    c.showPage()
+
+    y = INITIAL_Y
+    # Draw the projects
+    y = draw_projects_section(c, project_off, y, resume)
 
     c.save()
