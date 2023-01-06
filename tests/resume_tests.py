@@ -24,18 +24,14 @@ class TestLanguage(unittest.TestCase):
 
 class TestProject(unittest.TestCase):
     def test_project_name(self):
-        skill1 = Skill(name='Python')
-        skill2 = Skill(name='Java')
-        project = Project(name='My Project', start='2020-01-01', end='2020-06-30', skills=[skill1, skill2], description='This is a description of my project.')
+        project = Project(name='My Project', description='This is a description of my project.')
         self.assertEqual(project.name, 'My Project')
 
 class TestExperience(unittest.TestCase):
     def test_experience_company(self):
-        skill1 = Skill(name='Python')
-        skill2 = Skill(name='Java')
-        project1 = Project(name='Project 1', start='2020-01-01', end='2020-06-30', skills=[skill1, skill2], description='This is a description of my project.')
-        project2 = Project(name='Project 2', start='2020-07-01', end='2020-12-31', skills=[skill1], description='This is a description of my project.')
-        experience = Experience(company='Acme Inc.', title='Software Engineer', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2], skills=[skill1, skill2])
+        project1 = Project(name='Project 1', description='This is a description of my project.')
+        project2 = Project(name='Project 2', description='This is a description of my project.')
+        experience = Experience(company='Acme Inc.', title='Software Engineer', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2])
         self.assertEqual(experience.company, 'Acme Inc.')
 
 class TestResume(unittest.TestCase):
@@ -45,12 +41,12 @@ class TestResume(unittest.TestCase):
         skill2 = Skill(name='Java')
         language1 = Language(name='English', level='Fluent')
         language2 = Language(name='Spanish', level='Intermediate')
-        project1 = Project(name='Project 1', start='2020-01-01', end='2020-06-30', skills=[skill1, skill2], description='This is a description of my project.')
-        project2 = Project(name='Project 2', start='2020-07-01', end='2020-12-31', skills=[skill1], description='This is a description of my project.')
+        project1 = Project(name='Project 1', description='This is a description of my project.')
+        project2 = Project(name='Project 2', description='This is a description of my project.')
         education1 = Education(name='Bachelor of Science', start='2016-09-01', end='2020-05-01', description='This is a description of my education.')
         education2 = Education(name='Master of Science', start='2020-09-01', end='2022-05-01', description='This is a description of my education.')
-        experience1 = Experience(company='Acme Inc.', title='Software Engineer', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2], skills=[skill1, skill2])
-        experience2 = Experience(company='XYZ Corp.', title='Software Engineer', start='2021-01-01', end='2021-12-31', description='This is a description of my experience.', projects=[project1], skills=[skill2])
+        experience1 = Experience(company='Acme Inc.', title='Software Engineer', start='2020-01-01', end='2020-12-31', description='This is a description of my experience.', projects=[project1, project2])
+        experience2 = Experience(company='XYZ Corp.', title='Software Engineer', start='2021-01-01', end='2021-12-31', description='This is a description of my experience.', projects=[project1])
         resume = Resume(person=person, experiences=[experience1, experience2], educations=[education1, education2], skills=[skill1, skill2], languages=[language1, language2], projects=[project1, project2])
         self.assertEqual(resume.total_years_of_experience(), 2.0)
 

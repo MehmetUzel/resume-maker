@@ -16,8 +16,7 @@
             "start": "2022-05-01",
             "end": "Active",
             "description": "I developed an emailing service and a handshaking service to monitor the performance of individual services, ensuring that all cronjobs were executed successfully. It can monitore errors and provide support for non-idempotent services. This monitoring process, previously conducted by sysadmins for over 20 services, was automated through the use of my service, which also generated daily reports through email. Additionally, I created a news monitoring service that scrapes news from various sources, such as IRS, HKEX, and Clearstream, and emails them to analysts. I integrated a machine learning model to predict news topics and improve analysts' productivity. I also developed a government bonds monitoring service. I assisted and mentored junior developers in their integration to the company and in improving their technical skills, and participated in code reviews for junior-mid level developers. I also made deployments of web services and scripts to remote Linux VPS using Docker-Compose.",
-            "projects": [],
-            "skills": []
+            "projects": []
         },
         {
             "company": "Huawei",
@@ -25,8 +24,7 @@
             "start": "2021-09-01",
             "end": "2022-04-30",
             "description": "I was involved in telecom data analysis and machine learning projects, during which I deployed models using Python and Django. Unfortunately, I am unable to provide further information due to confidentiality agreements.",
-            "projects": [],
-            "skills": []
+            "projects": []
         },
         {
             "company": "Felece",
@@ -34,8 +32,7 @@
             "start": "2021-01-01",
             "end": "2021-08-31",
             "description": "Development of SAP Commerce (Hybris) using Java and Spring, following agile methodologies. This project involved the creation of an e-commerce platform for Penti, an international woman's clothing company with over 400 stores. During my time on this project, I was responsible for the development and implementation of various features, including favorites, store search and pick-up, customer consents, and others. These features aimed to improve the user experience and enhance the functionality of the platform. Overall, my work on this project allowed me to hone my skills in Java, Spring, and agile methodologies, and contributed to the success of the Penti e-commerce platform.",
-            "projects": [],
-            "skills": []
+            "projects": []
         },
         {
             "company": "Private",
@@ -43,8 +40,7 @@
             "start": "2018-12-01",
             "end": "2020-12-31",
             "description": "During my time at university, I had the opportunity to tutor programming to students aged 13-19. This experience allowed me to develop my teaching skills and strengthen my ability to explain complex concepts in an easily understandable manner. I believe that this experience is valuable in my professional career as it allows me to assist and guide my colleagues in improving their technical skills. The students I taught were located in Germany, Switzerland, the Netherlands, and Turkey, and the lessons were conducted entirely online in English. The topics covered included object-oriented programming, Java, Python, C#, JS, HTML, and CSS.",
-            "projects": [],
-            "skills": []
+            "projects": []
         }
     ],
     "educations": [
@@ -57,7 +53,7 @@
         {
             "name": "Data Science 102 Bootcamp",
             "start": "2020-08",
-            "end": "2021-10",
+            "end": "2020-10",
             "description": "Kodluyoruz social enterprise"
         }
     ],
@@ -123,20 +119,28 @@
     ],
     "projects": [
         {
-            "name": "Project C",
-            "start": "2021-01-01",
-            "end": "2021-06-30",
-            "skills": [
-                {
-                    "name": "Python",
-                    "seniority": "Senior"
-                },
-                {
-                    "name": "Flask",
-                    "seniority": "Mid"
-                }
-            ],
-            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "name": "Tutdu Mobile Application",
+            "description": "I developed this application with the goal of improving productivity and focus. It can be easy to become distracted or lose focus when working on a task, and this can result in a loss of time and efficiency. With this app, users can set their expected total effort and work and rest intervals, and receive reminders to stay focused and avoid getting bogged down in unimportant details. This app is available on the Apple App Store and can be downloaded at the following link: https://apps.apple.com/tr/app/tutdu/id1630913002."
+        },
+        {
+            "name": "Resume Builder Python Package",
+            "description": "I was frustrated with the various resume building tools and Word documents that I had tried, and I decided to create my own Python package that allows users to build a resume simply by providing a JSON file. This project allowed me to gain a deeper understanding of how Python packages work and how to share packages on PyPI. This resume was also built using this package, which I found to be an interesting and fulfilling process."
+        },
+        {
+            "name": "Crypto Trading Bot",
+            "description": "For this project, I developed a cryptocurrency trading bot that implemented my own trading strategy. Initial testing showed promising results, with daily profits ranging from 0.5% to 1.5% for various coins including BNB, ADA, BTC, ETH, LINK, and LTC. However, the market crash subsequently rendered the trading strategy ineffective."
+        },
+        {
+            "name": "Youtube Video Analysis and Editing Tool",
+            "description": "This program allows users to input a specific word and finds moments when the word is spoken in YouTube videos. It then creates small video clips with these moments. The program is able to download provided YouTube videos (or all videos in a playlist) using only the video links as input. It utilizes Google's speech recognition technology to convert the audio from the videos into text format, and then searches for the specified word within this text. The free version of this speech recognition tool can only process one minute of audio at a time, so I implemented a multi-threaded approach to speed up the process and make it 40 times faster on my system. The program also generates CSV files with a count of all the words used in the videos and removes common stop words to create a more useful dataset. Additionally, the program creates word clouds to provide a visual representation of the most commonly used words in the videos."
+        },
+        {
+            "name": "Online Scheduling and Appointment Management for Photographers",
+            "description": "I developed a website to streamline the appointment scheduling process for my friend's photography business, specializing in newborn photoshoots. Previously, my friend had been managing appointments and customer communication manually, with the assistance of an employee. By creating an online platform, I was able to automate these processes and eliminate the need for additional staffing."
+        },
+        {
+            "name": "Random Geolocation Generator",
+            "description": "I developed a dataset featuring 10,000 random geolocations (latitude and longitude coordinates) to use for training and testing machine learning models. I recognized the need for this resource as I was unable to find a similar dataset online. I believe in giving back to the community and, with that in mind, I created and published the dataset on Kaggle for others to use."
         }
     ]
 }

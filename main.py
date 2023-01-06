@@ -11,4 +11,6 @@ obj = Resume(**data)
 
 print(obj.total_years_of_experience())
 
-obj.new_generate_pdf('16skill.pdf')
+#obj.new_generate_pdf('18skill.pdf')
+
+generate_pdf(obj, '19skill.pdf')
