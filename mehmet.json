@@ -47,7 +47,7 @@
         {
             "name": "Eskisehir Technical University",
             "start": "2016-09",
-            "end": "2021-12",
+            "end": "2020-12",
             "description": "Computer Engineering Bachelors. 3.02/4.0 GPA"
         },
         {
@@ -128,7 +128,7 @@
         },
         {
             "name": "Crypto Trading Bot",
-            "description": "For this project, I developed a cryptocurrency trading bot that implemented my own trading strategy. Initial testing showed promising results, with daily profits ranging from 0.5% to 1.5% for various coins including BNB, ADA, BTC, ETH, LINK, and LTC. However, the market crash subsequently rendered the trading strategy ineffective."
+            "description": "For this project, I developed a cryptocurrency trading bot with python that implemented my own trading strategy. Initial testing showed promising results, with daily profits ranging from 0.5% to 1.5% for various coins including BNB, ADA, BTC, ETH, LINK, and LTC. However, the market crash subsequently rendered the trading strategy ineffective."
         },
         {
             "name": "Youtube Video Analysis and Editing Tool",

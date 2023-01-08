@@ -19,7 +19,6 @@ def draw_long_string(c, x, y, text, width):
     return current_y
 
 def draw_skills(c, x, y, text, width):
-    """Draw a long string on the given c, breaking it into multiple lines as needed to fit within the given width."""
     current_x = x
     current_y = y
     c.setFont('Helvetica', FONTSIZE)
@@ -32,16 +31,15 @@ def draw_skills(c, x, y, text, width):
     return current_y
 
 def draw_title_string(c, x, y, title):
-    c.setFillColorRGB(0.5,0.5,0.5) #choose your font colour
+    c.setFillColorRGB(0.5,0.5,0.5) 
     c.setFont("Helvetica", 20)
     c.drawString(x, y, title)
     c.setFont('Helvetica', FONTSIZE)
-    c.setFillColorRGB(0,0,0) #choose your font colour
+    c.setFillColorRGB(0,0,0) 
 
 def draw_experience_title(c, x, y, text, date):
     c.setFont("Helvetica", 13)
     c.drawString(x, y, text)
-    #newx = x + c.stringWidth(text)
     x += c.stringWidth(text)
     c.setFont('Helvetica', FONTSIZE)
     c.drawString(x, y, date)
@@ -118,7 +116,7 @@ def draw_experience_section(c, experience_off, y, resume):
         for project in experience.projects:
             c.drawString(experience_off+0.25*inch, y, f'{project.name}')
             y -= 0.25*inch
-            y = draw_long_string(c, experience_off+0.25*inch, y, project.description, 4*inch)
+            y = draw_long_string(c, experience_off+0.35*inch, y, project.description, 3.9*inch)
             y -= 0.25*inch
     return y - 0.25*inch
 
