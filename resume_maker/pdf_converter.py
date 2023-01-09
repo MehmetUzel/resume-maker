@@ -1,15 +1,19 @@
-from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.units import inch
 
 FONTSIZE = 10
+FONT = 'Helvetica'
 
-def draw_long_string(c, x, y, text, width):
-    """Draw a long string on the given c, breaking it into multiple lines as needed to fit within the given width."""
+def draw_long_string(c, x, y, text, width, fontsize = FONTSIZE):
+    """
+    Draw a long string on the given c, breaking it into multiple lines 
+    as needed to fit within the given width.
+    """
+
     words = text.split()
     current_x = x
     current_y = y
-    c.setFont('Helvetica', FONTSIZE)
+    c.setFont(FONT, fontsize)
     for word in words:
         if current_x + c.stringWidth(word) > x + width:
             current_x = x
@@ -21,7 +25,7 @@ def draw_long_string(c, x, y, text, width):
 def draw_skills(c, x, y, text, width):
     current_x = x
     current_y = y
-    c.setFont('Helvetica', FONTSIZE)
+    c.setFont(FONT, FONTSIZE)
     for word in text:
         if current_x + c.stringWidth(word.name) > x + width:
             current_x = x
@@ -32,43 +36,43 @@ def draw_skills(c, x, y, text, width):
 
 def draw_title_string(c, x, y, title):
     c.setFillColorRGB(0.5,0.5,0.5) 
-    c.setFont("Helvetica", 20)
+    c.setFont(FONT, 20)
     c.drawString(x, y, title)
-    c.setFont('Helvetica', FONTSIZE)
+    c.setFont(FONT, FONTSIZE)
     c.setFillColorRGB(0,0,0) 
 
 def draw_experience_title(c, x, y, text, date):
-    c.setFont("Helvetica", 13)
+    c.setFont(FONT, 13)
     c.drawString(x, y, text)
     x += c.stringWidth(text)
-    c.setFont('Helvetica', FONTSIZE)
+    c.setFont(FONT, FONTSIZE)
     c.drawString(x, y, date)
 
 def draw_credits(c, y):
     # ! Dont remove credits below
-    c.setFont("Helvetica", 7)
-    c.drawString(0.25*inch, y+0.1*inch, "Built with resume builder python package by Mehmet UZEL")
-    c.setFont("Helvetica", FONTSIZE)
+    c.setFont(FONT, 7)
+    c.drawString(0.25*inch, y+0.1*inch, "Built with resume-maker python package by Mehmet UZEL")
+    c.setFont(FONT, FONTSIZE)
     return y - 0.25*inch
 
 def draw_profile(c, profile_off, y, resume):
-    c.setFont("Helvetica", 14)
+    c.setFont(FONT, 14)
     c.drawString(profile_off, y, resume.person.get_full_name())
     y -= 0.25*inch
-    c.setFont("Helvetica", 13)
+    c.setFont(FONT, 13)
     c.drawString(profile_off, y, resume.person.title)
     y -= 0.25*inch
-    c.setFont("Helvetica", FONTSIZE)
+    c.setFont(FONT, FONTSIZE)
     c.drawString(profile_off, y, resume.person.phone)
     y -= 0.25*inch
     c.drawString(profile_off, y, resume.person.email)
     y -= 0.2*inch
-    c.setFont("Helvetica", 8)
+    c.setFont(FONT, 8)
     c.drawString(profile_off, y, resume.person.linkedin)
     y -= 0.2*inch
     c.drawString(profile_off, y, resume.person.github)
     y -= 0.5*inch
-    c.setFont("Helvetica", FONTSIZE)
+    c.setFont(FONT, FONTSIZE)
     return y
 
 def draw_skills_section(c, profile_off, y, resume):
@@ -89,9 +93,9 @@ def draw_education_section(c, profile_off, y, resume):
     for education in resume.educations:
         c.drawString(profile_off, y, f'{education.name} ({education.start} - {education.end})')
         y -= 0.25*inch
-        c.setFont("Helvetica", 8.5)
-        c.drawString(profile_off + 0.1*inch, y, f'{education.description}')
-        c.setFont("Helvetica", FONTSIZE)
+        
+        y = draw_long_string(c, profile_off+0.1*inch, y, education.description, 2.75*inch, 8.5)
+        c.setFont(FONT, FONTSIZE)
         y -= 0.25*inch
     return y - 0.25*inch
 
@@ -125,9 +129,9 @@ def draw_projects_section(c, project_off, y, resume):
     draw_title_string(c, project_off, y, 'Personal Projects')
     y -= 0.5*inch
     for project in resume.projects:
-        c.setFont("Helvetica", 13)
+        c.setFont(FONT, 13)
         c.drawString(project_off, y, f'{project.name}')
-        c.setFont("Helvetica", FONTSIZE)
+        c.setFont(FONT, FONTSIZE)
         y -= 0.25*inch
         y = draw_long_string(c, project_off+0.25*inch, y, project.description, 7.5*inch)
         y -= 0.5*inch
@@ -148,14 +152,11 @@ def generate_pdf(resume, filename):
     # Draw the name and contact information
     y = draw_profile(c, profile_off, y, resume)
 
-
     # Draw the skills
     y = draw_skills_section(c, profile_off, y, resume)
 
-
     # Draw the About
     y = draw_about_section(c, profile_off, y, resume)
-
 
     # Draw the education
     y = draw_education_section(c, profile_off, y, resume)
@@ -163,7 +164,6 @@ def generate_pdf(resume, filename):
     # Draw the languages
     y = draw_language_section(c, profile_off, y, resume)
     
-
     y = INITIAL_Y
     # Draw the experiences
     y = draw_experience_section(c, experience_off, y, resume)

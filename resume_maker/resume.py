@@ -2,9 +2,7 @@ from pydantic import BaseModel, HttpUrl
 from typing import List
 from enum import Enum
 from datetime import datetime
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen.canvas import Canvas
-from reportlab.lib.units import inch
+from resume_maker.pdf_converter import generate_pdf
 
 
 class Proficiency(str, Enum):
@@ -52,6 +50,9 @@ class Project(BaseModel):
 
 
 class Experience(BaseModel):
+    """
+    end can be a date or "active"
+    """
     company: str
     title: str
     start: str
@@ -72,9 +73,12 @@ class Resume(BaseModel):
         total_years = 0.0
         for experience in self.experiences:
             start_date = datetime.strptime(experience.start, '%Y-%m-%d')
-            if experience.end == "Active":
+            if experience.end.lower() == "active":
                 end_date = datetime.today()
             else:
                 end_date = datetime.strptime(experience.end, '%Y-%m-%d')
             total_years += (end_date - start_date).days / 365.25
         return round(total_years, 1)
+
+    def get_pdf(self, filename):
+        generate_pdf(self, filename)

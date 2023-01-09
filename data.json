@@ -5,7 +5,7 @@
         "email": "john.doe@example.com",
         "phone": "1234567890",
         "title": "Software Engineer",
-        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum.",
         "linkedin": "https://www.linkedin.com/in/john-doe/",
         "github": "https://github.com/johndoe"
     },
@@ -19,45 +19,11 @@
             "projects": [
                 {
                     "name": "Project A",
-                    "start": "2020-01-01",
-                    "end": "2020-06-30",
-                    "skills": [
-                        {
-                            "name": "Python",
-                            "seniority": "Senior"
-                        },
-                        {
-                            "name": "Django",
-                            "seniority": "Mid"
-                        }
-                    ],
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 },
                 {
                     "name": "Project B",
-                    "start": "2020-07-01",
-                    "end": "2020-12-31",
-                    "skills": [
-                        {
-                            "name": "JavaScript",
-                            "seniority": "Mid"
-                        },
-                        {
-                            "name": "React",
-                            "seniority": "Mid"
-                        }
-                    ],
                     "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                }
-            ],
-            "skills": [
-                {
-                    "name": "Agile",
-                    "seniority": "Senior"
-                },
-                {
-                    "name": "Scrum",
-                    "seniority": "Mid"
                 }
             ]
         },
@@ -70,45 +36,11 @@
             "projects": [
                 {
                     "name": "Project A",
-                    "start": "2020-01-01",
-                    "end": "2020-06-30",
-                    "skills": [
-                        {
-                            "name": "Python",
-                            "seniority": "Senior"
-                        },
-                        {
-                            "name": "Django",
-                            "seniority": "Mid"
-                        }
-                    ],
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 },
                 {
                     "name": "Project B",
-                    "start": "2020-07-01",
-                    "end": "2020-12-31",
-                    "skills": [
-                        {
-                            "name": "JavaScript",
-                            "seniority": "Mid"
-                        },
-                        {
-                            "name": "React",
-                            "seniority": "Mid"
-                        }
-                    ],
                     "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                }
-            ],
-            "skills": [
-                {
-                    "name": "Agile",
-                    "seniority": "Senior"
-                },
-                {
-                    "name": "Scrum",
-                    "seniority": "Mid"
                 }
             ]
         }
@@ -119,32 +51,47 @@
             "start": "2016-09-01",
             "end": "2020-06-30",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name": "Bootcamp of Example",
+            "start": "2021-09-01",
+            "end": "2021-12-30",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
     ],
     "skills": [
         {
-            "name": "Python",
-            "seniority": "Senior"
+            "name": "Python"
         },
         {
-            "name": "Django",
-            "seniority": "Mid"
+            "name": "Django"
         },
         {
-            "name": "JavaScript",
-            "seniority": "Mid"
+            "name": "JavaScript"
         },
         {
-            "name": "React",
-            "seniority": "Mid"
+            "name": "React"
         },
         {
-            "name": "Agile",
-            "seniority": "Senior"
+            "name": "Agile"
         },
         {
-            "name": "Scrum",
-            "seniority": "Mid"
+            "name": "Scrum"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "C#"
+        },
+        {
+            "name": "Unity"
+        },
+        {
+            "name": "Flutter"
+        },
+        {
+            "name": "Dart"
         }
     ],
     "languages": [
@@ -160,19 +107,23 @@
     "projects": [
         {
             "name": "Project C",
-            "start": "2021-01-01",
-            "end": "2021-06-30",
-            "skills": [
-                {
-                    "name": "Python",
-                    "seniority": "Senior"
-                },
-                {
-                    "name": "Flask",
-                    "seniority": "Mid"
-                }
-            ],
-            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Project D",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Project E",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Project F",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Project G",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ullamcorper odio vitae tincidunt tincidunt. Proin non sollicitudin libero. Praesent felis nulla, faucibus sit amet porta in, convallis eu nulla. Suspendisse mattis ante quam, in dignissim nulla semper in. Sed quis nulla ligula. Quisque dapibus, lectus vel euismod sagittis, arcu purus laoreet massa, at semper diam massa eget diam. Nunc molestie quam sed dolor sodales, nec tempor libero vestibulum. Fusce bibendum turpis hendrerit felis posuere, vitae feugiat lectus euismod. Integer vitae lacinia sem. Fusce semper ipsum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         }
     ]
 }

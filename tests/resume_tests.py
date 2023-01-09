@@ -1,5 +1,5 @@
 import unittest
-from resume_builder import *
+from resume_maker import *
 
 class TestPerson(unittest.TestCase):
     def test_get_full_name(self):

@@ -1,0 +1,4 @@
+Pillow==9.4.0
+pydantic==1.10.4
+reportlab==3.6.12
+typing-extensions==4.4.0

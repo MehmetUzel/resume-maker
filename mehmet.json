@@ -123,7 +123,7 @@
             "description": "I developed this application with the goal of improving productivity and focus. It can be easy to become distracted or lose focus when working on a task, and this can result in a loss of time and efficiency. With this app, users can set their expected total effort and work and rest intervals, and receive reminders to stay focused and avoid getting bogged down in unimportant details. This app is available on the Apple App Store and can be downloaded at the following link: https://apps.apple.com/tr/app/tutdu/id1630913002."
         },
         {
-            "name": "Resume Builder Python Package",
+            "name": "Resume Maker Python Package",
             "description": "I was frustrated with the various resume building tools and Word documents that I had tried, and I decided to create my own Python package that allows users to build a resume simply by providing a JSON file. This project allowed me to gain a deeper understanding of how Python packages work and how to share packages on PyPI. This resume was also built using this package, which I found to be an interesting and fulfilling process."
         },
         {

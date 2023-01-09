@@ -1,4 +1,4 @@
-from resume_builder import *
+from resume_maker import *
 import json
 
 # Open the JSON file
@@ -13,4 +13,4 @@ print(obj.total_years_of_experience())
 
 #obj.new_generate_pdf('18skill.pdf')
 
-generate_pdf(obj, '22skill.pdf')
+obj.get_pdf('26skill.pdf')
