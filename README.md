@@ -1,15 +1,12 @@
 # resume-maker
 Python package to build your resume
 
-![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page1.jpg)
-
-![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page2.jpg)
-
+## Install
 ```bash
 pip install resume-maker
 ```
 
-Sample Usage
+## Sample Usage
 ```python
 from resume_maker import *
 import json
@@ -26,7 +23,8 @@ obj = Resume(**data)
 obj.get_pdf('resume.pdf')
 ```
 
-Sample JSON
+## Sample JSON
+You can use this sample json file and change the details 
 
 ```json
 {
@@ -159,3 +157,9 @@ Sample JSON
     ]
 }
 ```
+
+## Example Result
+
+![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page1.jpg)
+
+![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page2.jpg)
