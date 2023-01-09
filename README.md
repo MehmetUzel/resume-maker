@@ -1,6 +1,10 @@
 # resume-maker
 Python package to build your resume
 
+![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page1.jpg)
+
+![My Remote Image](https://github.com/MehmetUzel/resume-maker/blob/main/ex_page2.jpg)
+
 ```bash
 pip install resume-maker
 ```
