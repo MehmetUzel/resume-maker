@@ -4,15 +4,15 @@
         "surname": "Uzel",
         "email": "98mehmetuzel@gmail.com",
         "phone": "+905317932594",
-        "title": "Product Engineer Focused on Mobile Experiences",
-        "about": "I am a product engineer with experience in various programming languages and technologies. In my professional experience, I have worked on various projects and I am stack agnostic. I am a quick learner and I am always looking for new challenges and opportunities to grow.",
+        "title": "Mobile Product Engineer",
+        "about": "I am a stack agnostic product engineer with experience in various programming languages and technologies. I am a quick learner and always looking for new challenges and opportunities to grow.",
         "linkedin": "https://www.linkedin.com/in/mehmet-uzel-925601136/",
         "github": "https://github.com/MehmetUzel"
     },
     "experiences": [
         {
             "company": "Thomas Murray",
-            "title": "Software Engineer",
+            "title": "Software Eng",
             "start": "2022-05-01",
             "end": "2025-11-14",
             "description": "I developed an emailing service and a handshaking service to monitor the performance of individual services, ensuring that all cronjobs were executed successfully. It can monitore errors and provide support for non-idempotent services. This monitoring process, previously conducted by sysadmins for over 20 services, was automated through the use of my service, which also generated daily reports through email. Additionally, I created a news monitoring service that scrapes news from various sources, such as IRS, HKEX, and Clearstream, and emails them to analysts. I integrated a machine learning model to predict news topics and improve analysts' productivity. I also developed a government bonds monitoring service. I assisted and mentored junior developers in their integration to the company and in improving their technical skills, and participated in code reviews for junior-mid level developers. I also made deployments of web services and scripts to remote Linux VPS using Docker-Compose.",
@@ -20,7 +20,7 @@
         },
         {
             "company": "Huawei",
-            "title": "Software Engineer",
+            "title": "Software Eng",
             "start": "2021-09-01",
             "end": "2022-04-30",
             "description": "I was involved in telecom data analysis and machine learning projects, during which I deployed models using Python and Django. Unfortunately, I am unable to provide further information due to confidentiality agreements.",
@@ -28,7 +28,7 @@
         },
         {
             "company": "Felece",
-            "title": "Software Engineer",
+            "title": "Software Eng",
             "start": "2021-01-01",
             "end": "2021-08-31",
             "description": "Development of SAP Commerce (Hybris) using Java and Spring, following agile methodologies. This project involved the creation of an e-commerce platform for Penti, an international woman's clothing company with over 400 stores. During my time on this project, I was responsible for the development and implementation of various features, including favorites, store search and pick-up, customer consents, and others. These features aimed to improve the user experience and enhance the functionality of the platform. Overall, my work on this project allowed me to hone my skills in Java, Spring, and agile methodologies, and contributed to the success of the Penti e-commerce platform.",
@@ -120,31 +120,31 @@
     "projects": [
         {
             "name": "Ödedimmi Mobile and Web App Flutter 2025 (In Progress)",
-            "description": "I developed a mobile and web app using Flutter and the Flutter framework. The app allows users to track their expenses and income, and to create and manage budgets. The app uses the OpenAI API to generate a cost estimate based on the details of the project. The app was available on the Apple App Store and can be downloaded at the following link: https://odedimmi.com"
+            "description": "A Flutter web and mobile app for tracking expenses and income with syncronized multi account and member support. Fully built with Flutter and Firebase with an intern I worked with. https://www.odedimmi.com"
         },
         {
             "name": "Safe Zones Camera App SwiftUI 2025",
-            "description": "I developed a safe zones camera app using SwiftUI and the SwiftUI framework. The app allows users to take photos of their surroundings and identify safe zones. The app uses the OpenAI API to identify safe zones based on the photos taken. The app was available on the Apple App Store and can be downloaded at the following link: https://apps.apple.com/tr/app/teleprompt-safe-zones/id6742501764"
+            "description": "I developed a safe zones camera app using SwiftUI and the SwiftUI framework. The app allows users to create templates with safe zones and take photos or videos by overlaying a safe zone on the screen and a teleprompter. https://apps.apple.com/tr/app/teleprompt-safe-zones/id6742501764"
         },
         {
             "name": "Construction AI Estimation App SwiftUI 2024",
-            "description": "The app got 10K+ downloads, 15K$+ revenue and 4.6 stars on the Apple App Store. I developed a contractor estimation app using SwiftUI and the SwiftUI framework. The app allows users to estimate the cost of a project by entering the details of the project. The app uses the OpenAI API with a custom fine-tuned model I trained myself to generate a cost estimate based on the details of the project. The app was available on the Apple App Store and can be downloaded at the following link: https://apps.apple.com/tr/app/ai-cost-estimates-4-contractor/id6740389403"
+            "description": "The app got 10K+ downloads, 15K$+ revenue and 4.6 stars on the Apple App Store. I developed a contractor estimation app using SwiftUI and the SwiftUI framework. The app allows users to estimate the cost of a project by entering the details of the project. The app uses the OpenAI API with a custom fine-tuned model I trained myself to generate a cost estimate based on the details of the project. https://apps.apple.com/tr/app/ai-cost-estimates-4-contractor/id6740389403"
         },
         {
             "name": "Paytodo Budgeting App SwiftUI 2023",
-            "description": "The app got 50K+ downloads, 40K$+ revenue and 4.7 stars on the Apple App Store. I developed a budgeting app using SwiftUI and the SwiftUI framework. The app allows users to set their expected total effort and work and rest intervals, and receive reminders to stay focused and avoid getting bogged down in unimportant details. This app was available on the Apple App Store and can be downloaded at the following link: https://apps.apple.com/tr/app/income-expense-planner-paytodo/id6460931601"
+            "description": "The app got 50K+ downloads, 40K$+ revenue and 4.7 stars on the Apple App Store. I developed a budgeting app using SwiftUI and the SwiftUI framework. The app allows users to track their income and expenses and create budgets. https://apps.apple.com/tr/app/income-expense-planner-paytodo/id6460931601"
         },
         {
             "name": "AI Chatbot App SwiftUI 2023",
-            "description": "I developed an AI chatbot using Python and the OpenAI API. The chatbot is designed to answer questions and provide information on a wide range of topics. It uses natural language processing to understand user queries and generate appropriate responses. The chatbot is hosted on a Linux VPS and can be accessed through a web interface. This app was published on the Apple App Store but I removed it from the store because I wanted to focus on other projects."
+            "description": "It was still in the early days of ChatGPT API and official ChatGPT app was not yet released. This was my attempt to build a chatbot using the OpenAI API. This app was published on the Apple App Store but I removed it from the store due to inactivity."
         },
         {
-            "name": "ConvoUp Mobile App Flutter 2022",
-            "description": "I developed this application with the goal of improving productivity and focus. It can be easy to become distracted or lose focus when working on a task, and this can result in a loss of time and efficiency. With this app, users can set their expected total effort and work and rest intervals, and receive reminders to stay focused and avoid getting bogged down in unimportant details. This app was published on the Apple App Store but I removed it from the store because I wanted to focus on other projects."
+            "name": "ConvoUp Mobile App Flutter 2023",
+            "description": "Back in the days ChatGPT API was just released and this was an experiment app to see how it works. The app generating conversation starter questions based on the user's interests. Used AWS lambda for hosting This app was published on the Apple App Store but I removed it from the store due to inactivity."
         },
         {
             "name": "Tutdu Mobile App Flutter 2022",
-            "description": "I developed this application with the goal of improving productivity and focus. It can be easy to become distracted or lose focus when working on a task, and this can result in a loss of time and efficiency. With this app, users can set their expected total effort and work and rest intervals, and receive reminders to stay focused and avoid getting bogged down in unimportant details. This app was published on the Apple App Store but I removed it from the store because I wanted to focus on other projects."
+            "description": "An app for improving productivity and focus. Back in the days pomodoro technique was not popular yet and this was basically one of the first examples to implement it. This app was published on the Apple App Store but I removed it from the store due to inactivity."
         },
         {
             "name": "Resume Maker Python Package 2022",
@@ -153,18 +153,6 @@
         {
             "name": "Crypto Trading Bot 2021",
             "description": "For this project, I developed a cryptocurrency trading bot with python that implemented my own trading strategy. Initial testing showed promising results, with daily profits ranging from 0.5% to 1.5% for various coins including BNB, ADA, BTC, ETH, LINK, and LTC. However, the market crash subsequently rendered the trading strategy ineffective."
-        },
-        {
-            "name": "Youtube Video Analysis and Editing Tool 2021",
-            "description": "This program allows users to input a specific word and finds moments when the word is spoken in YouTube videos. It then creates small video clips with these moments. The program is able to download provided YouTube videos (or all videos in a playlist) using only the video links as input. It utilizes Google's speech recognition technology to convert the audio from the videos into text format, and then searches for the specified word within this text. The free version of this speech recognition tool can only process one minute of audio at a time, so I implemented a multi-threaded approach to speed up the process and make it 40 times faster on my system. The program also generates CSV files with a count of all the words used in the videos and removes common stop words to create a more useful dataset. Additionally, the program creates word clouds to provide a visual representation of the most commonly used words in the videos."
-        },
-        {
-            "name": "Online Scheduling and Appointment Management for Photographers 2020",
-            "description": "I developed a website to streamline the appointment scheduling process for photographers, specializing in newborn photoshoots. Previously, photographers had been managing appointments and customer communication manually, with the assistance of an employee. By creating an online platform, I was able to automate these processes and eliminate the need for additional staffing."
-        },
-        {
-            "name": "Geolocation Classification for Staff Bus Route Optimization 2020",
-            "description": "I made this project to classify the geolocations of staff buses and optimize the route of the buses dynamically based on the geolocations of the staff members and the status of their attendance."
         }
     ]
 }
