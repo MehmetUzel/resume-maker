@@ -2,7 +2,7 @@ from resume_maker import *
 import json
 
 # Open the JSON file
-with open('data.json', 'r') as f:
+with open('mehmet.json', 'r') as f:
     # Load the data from the file
     data = json.load(f)
 
@@ -13,4 +13,4 @@ print(obj.total_years_of_experience())
 
 #obj.new_generate_pdf('18skill.pdf')
 
-obj.get_pdf('26skill.pdf')
+obj.get_pdf('Mehmet_Uzel_AI_Native_Engineer_Resume.pdf')

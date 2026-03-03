@@ -20,6 +20,7 @@ class Person(BaseModel):
     about: str
     linkedin: HttpUrl
     github: HttpUrl
+    twitter: HttpUrl = None
 
     def get_full_name(self):
         return f"{self.name} {self.surname}"
@@ -73,7 +74,7 @@ class Resume(BaseModel):
         total_years = 0.0
         for experience in self.experiences:
             start_date = datetime.strptime(experience.start, '%Y-%m-%d')
-            if experience.end.lower() == "active":
+            if not experience.end or experience.end.lower() == "active":
                 end_date = datetime.today()
             else:
                 end_date = datetime.strptime(experience.end, '%Y-%m-%d')

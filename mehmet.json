@@ -2,14 +2,23 @@
     "person": {
         "name": "Mehmet",
         "surname": "Uzel",
-        "email": "98mehmetuzel@gmail.com",
+        "email": "mehmet@uzelabs.com",
         "phone": "+905317932594",
-        "title": "Mobile Product Engineer",
+        "title": "AI Native Engineer",
         "about": "I am a stack agnostic product engineer with experience in various programming languages and technologies. I am a quick learner and always looking for new challenges and opportunities to grow.",
         "linkedin": "https://www.linkedin.com/in/mehmet-uzel-925601136/",
-        "github": "https://github.com/MehmetUzel"
+        "github": "https://github.com/MehmetUzel",
+        "twitter": "https://x.com/MehmetUzel98"
     },
     "experiences": [
+        {
+            "company": "UZELABS Limited",
+            "title": "Founder",
+            "start": "2025-11-15",
+            "end": "",
+            "description": "We design and develop various projects for clients from different backgrounds. Also, we approve due diligence for current projects and help companies adapt new AI technologies. We educate their employees on new workflows and guide them on how to integrate AI tools into their daily operations.",
+            "projects": []
+        },
         {
             "company": "Thomas Murray",
             "title": "Software Eng",
@@ -119,8 +128,8 @@
     ],
     "projects": [
         {
-            "name": "Ödedimmi Mobile and Web App Flutter 2025 (In Progress)",
-            "description": "A Flutter web and mobile app for tracking expenses and income with syncronized multi account and member support. Fully built with Flutter and Firebase with an intern I worked with. https://www.odedimmi.com"
+            "name": "Ödedimmi Mobile and Web App Flutter 2025",
+            "description": "The app got 110K+ users and 30K$+ revenue since its launch in early December 2025 and is still growing. A Flutter web and mobile app for tracking expenses and income with synchronized multi account and member support. Fully built with Flutter and Firebase with an intern I worked with. https://www.odedimmi.com"
         },
         {
             "name": "Safe Zones Camera App SwiftUI 2025",
