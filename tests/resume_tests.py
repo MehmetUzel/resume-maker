@@ -50,5 +50,27 @@ class TestResume(unittest.TestCase):
         resume = Resume(person=person, experiences=[experience1, experience2], educations=[education1, education2], skills=[skill1, skill2], languages=[language1, language2], projects=[project1, project2])
         self.assertEqual(resume.total_years_of_experience(), 2.0)
 
+    def test_total_years_of_experience_merges_overlaps_and_supports_partial_dates(self):
+        person = Person(name='John', surname='Doe', email='john@example.com', phone='123-456-7890', title='Software Engineer', about='Motivated Engineer, who likes camping', linkedin='http://linkedin.com/in/johndoe', github='http://github.com/johndoe')
+        language = Language(name='English', level='Fluent')
+        skill = Skill(name='Python')
+        project = Project(name='Project 1', description='This is a description of my project.')
+        education = Education(name='Bachelor of Science', start='2016-09', end='2020-05', description='This is a description of my education.')
+        experience1 = Experience(company='Acme Inc.', title='Software Engineer', start='2023', end='2025', description='This is a description of my experience.', projects=[project])
+        experience2 = Experience(company='XYZ Corp.', title='Consultant', start='Jun 2024', end='Sep 2024', description='This is a description of my experience.', projects=[project])
+        resume = Resume(person=person, experiences=[experience1, experience2], educations=[education], skills=[skill], languages=[language], projects=[project])
+        self.assertEqual(resume.total_years_of_experience(), 3.0)
+
+    def test_total_years_of_experience_supports_turkish_months_and_locale(self):
+        person = Person(name='Ayse', surname='Yilmaz', email='ayse@example.com', phone='123-456-7890', title='Engineer', about='Merhaba', linkedin='http://linkedin.com/in/ayse', github='http://github.com/ayse')
+        language = Language(name='English', level='Fluent')
+        skill = Skill(name='Python')
+        project = Project(name='Project 1', description='This is a description of my project.')
+        education = Education(name='Lisans', start='Eyl 2019', end='Haz 2023', description='Bu bir aciklamadir.')
+        experience = Experience(company='Acme Inc.', title='Engineer', start='Oca 2025', end='Ara 2025', description='This is a description of my experience.', projects=[project])
+        resume = Resume(locale='tr', person=person, experiences=[experience], educations=[education], skills=[skill], languages=[language], projects=[project])
+        self.assertEqual(resume.locale, 'tr')
+        self.assertEqual(resume.total_years_of_experience(), 1.0)
+
 if __name__ == '__main__':
     unittest.main()

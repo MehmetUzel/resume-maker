@@ -1,0 +1,189 @@
+{
+    "locale": "tr",
+    "person": {
+        "name": "Şükrü",
+        "surname": "Taşkıran",
+        "email": "sukru.taskiran2@gmail.com",
+        "phone": "+90 542 637 4144",
+        "location": "İstanbul, Türkiye",
+        "title": "AI Native Engineer",
+        "about": "Kullanışlı, sade ve iyi düşünülmüş mobil ürünler geliştirmeyi seviyorum. Ana odağım Flutter ve son birkaç yıldır AI-native ürünler ve iş akışları tarafında da daha derin çalışıyorum. Özellikle AI Agents, Prompt Engineering, RAG, MCP, Tool Calling ve evals gibi konularla ilgileniyorum.",
+        "linkedin": "https://www.linkedin.com/in/sukrutask/",
+        "github": "https://github.com/Forexign"
+    },
+    "experiences": [
+        {
+            "company": "UZELABS Limited",
+            "title": "Yapay Zeka Mühendisi",
+            "start": "Eyl 2025",
+            "end": "",
+            "description": "Şu anda Ödedimmi uygulamasında kullanıcı mobil deneyimi, yeni özellik geliştirilmesi ve mevcut özelliklerin iyileştirilmesi üzerine çalışıyorum.",
+            "projects": [
+        {
+            "name": "Ödedimmi",
+            "description": "Gider ve gelir takibi için senkronize çoklu hesap ve üye desteği sunan Flutter tabanlı web ve mobil uygulama.",
+            "link_label": "odedimmi.com",
+            "link_url": "https://www.odedimmi.com"
+        }
+            ]
+        },
+        {
+            "company": "UDY Digital",
+            "title": "Yazılım Geliştirici",
+            "start": "Oca 2025",
+            "end": "Ağu 2025",
+            "description": "Türkiye'deki kullanıcılar ve yurt dışında yaşayan Türkler için, pratik özelliklere ve net kullanıcı değerine odaklanan mobil ürünler geliştirdim.",
+            "projects": [
+                {
+                    "name": "KetoLife",
+                    "description": "Kullanıcıların kalori takibi yapmasına, keto durumlarını izlemesine ve vücutlarında neler olduğunu sağlık odaklı takip araçlarıyla anlamasına yardımcı oldum."
+                },
+                {
+                    "name": "Gurbet App",
+                    "description": "Özellikle Almanya'da yaşayan Türkler için; resmi belge çevirisi, ev bulma ve Lebensmittelwarnung ürün uyarıları özelliklerine odaklanan bir uygulama geliştirdim."
+                }
+            ]
+        },
+        {
+            "company": "Outlier",
+            "title": "Yapay Zeka Veri Uzmanı",
+            "start": "2024",
+            "end": "2025",
+            "description": "RLHF çalışmaları, istem mühendisliği ve model çıktı değerlendirmesiyle yapay zeka modellerinin performansını geliştirdim.",
+            "projects": []
+        },
+        {
+            "company": "Freelance",
+            "title": "WordPress Geliştiricisi",
+            "start": "2023",
+            "end": "2025",
+            "description": "Farklı müşteriler için responsive web siteleri geliştirdim ve bakımını yaptım. Elementor ile özel tasarım ve işlevsellik sağlarken SEO, performans, hosting, DNS ve HTTP/HTTPS konularında çalıştım.",
+            "projects": []
+        },
+        {
+            "company": "Infoera Software Company",
+            "title": "Yazılım Geliştirici Stajyeri",
+            "start": "Haz 2024",
+            "end": "Eyl 2024",
+            "description": ".NET Core, MVC ve WebAPI projelerinde çalıştım. DevExpress ile arayüz tasarladım, SQL Server kullandım ve N-Tier ile Clean Architecture konusunda pratik deneyim kazandım.",
+            "projects": []
+        }
+    ],
+    "educations": [
+        {
+            "name": "İzmir Ekonomi Üniversitesi",
+            "start": "Eyl 2019",
+            "end": "Haz 2025",
+            "description": "Yazılım Mühendisliği Lisans Programı (İngilizce, %100 burslu)"
+        }
+    ],
+    "skills": [
+        {
+            "name": "C#"
+        },
+        {
+            "name": ".NET Core"
+        },
+        {
+            "name": "MVC"
+        },
+        {
+            "name": "SQL Server"
+        },
+        {
+            "name": "WebAPI"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Flutter"
+        },
+        {
+            "name": "Mobile App Development"
+        },
+        {
+            "name": "Google Play Publishing"
+        },
+        {
+            "name": "AI Agents"
+        },
+        {
+            "name": "Agentic Workflows"
+        },
+        {
+            "name": "Prompt Engineering"
+        },
+        {
+            "name": "LLM Integrations"
+        },
+        {
+            "name": "RAG"
+        },
+        {
+            "name": "Tool Calling"
+        },
+        {
+            "name": "MCP"
+        },
+        {
+            "name": "AI Evals"
+        },
+        {
+            "name": "RLHF"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "WordPress"
+        },
+        {
+            "name": "Elementor"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "Figma"
+        },
+        {
+            "name": "SEO"
+        }
+    ],
+    "languages": [
+        {
+            "name": "İngilizce",
+            "level": "Fluent"
+        },
+        {
+            "name": "Almanca",
+            "level": "Beginner"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Sigaradan Kurtul (2025)",
+            "description": "Kullanıcıların sigarayı bırakmasına motivasyon, ilerleme takibi ve pratik destek sunan bir Flutter uygulaması. Google Play'de yayınlandı.",
+            "link_label": "Tanıtım Videosu",
+            "link_url": "https://www.youtube.com/shorts/4OG5haswRR8"
+        },
+        {
+            "name": "O İş Tamam - Haftalık Planlayıcı (2025)",
+            "description": "Temiz ve dikkat dağıtmayan bir verimlilik deneyimi için Flutter ile geliştirilmiş sade ve reklamsız haftalık planlayıcı. Google Play'de yayınlandı."
+        },
+        {
+            "name": "WordPress ile Website Projeleri (2023-2025)",
+            "description": "Elementor kullanarak müşteriler için duyarlı, özel ve işlevsel WordPress siteleri geliştirdim ve bakımını yaptım."
+        }
+    ]
+}

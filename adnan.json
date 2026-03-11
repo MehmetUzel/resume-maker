@@ -1,0 +1,189 @@
+{
+    "locale": "en",
+    "person": {
+        "name": "Şükrü",
+        "surname": "Taşkıran",
+        "email": "sukru.taskiran2@gmail.com",
+        "phone": "+90 542 637 4144",
+        "location": "Istanbul, Turkey",
+        "title": "AI Native Engineer",
+        "about": "I enjoy building mobile products that feel useful, simple, and well thought out. My main focus is Flutter, and in the last few years I have also been working more deeply with AI-native products and workflows including agents, prompt engineering, RAG, MCP, tool calling, and evals.",
+        "linkedin": "https://www.linkedin.com/in/sukrutask/",
+        "github": "https://github.com/Forexign"
+    },
+    "experiences": [
+        {
+            "company": "UZELABS Limited",
+            "title": "AI Engineer",
+            "start": "Sep 2025",
+            "end": "",
+            "description": "Currently developing the Odedimmi app and contributing to product work focused on mobile experience, feature delivery, growth, and AI-native product thinking.",
+            "projects": [
+                {
+                    "name": "Ödedimmi",
+                    "description": "A Flutter web and mobile app for tracking expenses and income with synchronized multi-account and member support.",
+                    "link_label": "odedimmi.com",
+                    "link_url": "https://www.odedimmi.com"
+                }
+            ]
+        },
+        {
+            "company": "UDY Digital",
+            "title": "Software Developer",
+            "start": "Jan 2025",
+            "end": "Aug 2025",
+            "description": "Worked as a software developer building consumer-facing mobile products for Turkish users and Turkish expats living abroad, with a focus on practical features and clear user value.",
+            "projects": [
+                {
+                    "name": "KetoLife",
+                    "description": "Helped users track calories, monitor keto states, and understand what is happening in their bodies through informative insights and health-oriented trackers."
+                },
+                {
+                    "name": "Gurbet App",
+                    "description": "Built for Turkish expats living outside Turkey, especially in Germany, focusing on official document translation, helping users find houses, and surfacing Lebensmittelwarnung food product alerts."
+                }
+            ]
+        },
+        {
+            "company": "Outlier",
+            "title": "AI Data Specialist",
+            "start": "2024",
+            "end": "2025",
+            "description": "Applied Reinforcement Learning from Human Feedback (RLHF) to improve AI model performance. Conducted prompt engineering and assessment of model outputs.",
+            "projects": []
+        },
+        {
+            "company": "Freelance",
+            "title": "WordPress Developer",
+            "start": "2023",
+            "end": "2025",
+            "description": "Developed and maintained responsive websites for various clients. Integrated SEO practices and optimized performance. Used WordPress with Elementor for custom design and functionality. Worked with hosting, domain management, DNS, and HTTP/HTTPS fundamentals.",
+            "projects": []
+        },
+        {
+            "company": "Infoera Software Company",
+            "title": "Software Developer Intern",
+            "start": "Jun 2024",
+            "end": "Sep 2024",
+            "description": "Worked on projects using .NET Core, MVC, and WebAPI. Designed user interfaces with DevExpress and used SQL Server for database management. Gained practical experience with N-Tier and Clean Architecture.",
+            "projects": []
+        }
+    ],
+    "educations": [
+        {
+            "name": "İzmir University of Economics",
+            "start": "Sep 2019",
+            "end": "Jun 2025",
+            "description": "BS Software Engineering (English, 100% Scholarship)"
+        }
+    ],
+    "skills": [
+        {
+            "name": "C#"
+        },
+        {
+            "name": ".NET Core"
+        },
+        {
+            "name": "MVC"
+        },
+        {
+            "name": "SQL Server"
+        },
+        {
+            "name": "WebAPI"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Flutter"
+        },
+        {
+            "name": "Mobile App Development"
+        },
+        {
+            "name": "Google Play Publishing"
+        },
+        {
+            "name": "AI Agents"
+        },
+        {
+            "name": "Agentic Workflows"
+        },
+        {
+            "name": "Prompt Engineering"
+        },
+        {
+            "name": "LLM Integrations"
+        },
+        {
+            "name": "RAG"
+        },
+        {
+            "name": "Tool Calling"
+        },
+        {
+            "name": "MCP"
+        },
+        {
+            "name": "AI Evals"
+        },
+        {
+            "name": "RLHF"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "WordPress"
+        },
+        {
+            "name": "Elementor"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "Figma"
+        },
+        {
+            "name": "SEO"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Fluent"
+        },
+        {
+            "name": "German",
+            "level": "Beginner"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Sigaradan Kurtul (2025)",
+            "description": "A Flutter app that helps users quit smoking with motivation, progress tracking, and practical support. Published on Google Play with a short promo video.",
+            "link_label": "Promo Video",
+            "link_url": "https://www.youtube.com/shorts/4OG5haswRR8"
+        },
+        {
+            "name": "O İş Tamam - Haftalık Planlayıcı (2025)",
+            "description": "A simple ad-free weekly planner built with Flutter to improve productivity through a clean and distraction-free experience. Published on Google Play."
+        },
+        {
+            "name": "Multiple WordPress Websites (2023-2025)",
+            "description": "Developed and maintained multiple WordPress websites for clients using Elementor to deliver responsive, custom, and functional designs."
+        }
+    ]
+}
